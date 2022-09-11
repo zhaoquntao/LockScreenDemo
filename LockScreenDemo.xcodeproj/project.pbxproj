@@ -18,6 +18,8 @@
 		576C6B86285079C1007C1C33 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 576C6B78285079C1007C1C33 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		576C6B8C285079FF007C1C33 /* LockScreenWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C6B8B285079FF007C1C33 /* LockScreenWidgetEntryView.swift */; };
 		576C6B8F28507C7B007C1C33 /* LockScreenWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C6B8B285079FF007C1C33 /* LockScreenWidgetEntryView.swift */; };
+		577D71B728CB0B3F00A57477 /* LockScreenWidget1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D71B628CB0B3F00A57477 /* LockScreenWidget1.swift */; };
+		577D71B928CB0D6600A57477 /* LockScreenWidget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D71B828CB0D6600A57477 /* LockScreenWidget2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		576C6B81285079C1007C1C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576C6B83285079C1007C1C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		576C6B8B285079FF007C1C33 /* LockScreenWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidgetEntryView.swift; sourceTree = "<group>"; };
+		577D71B628CB0B3F00A57477 /* LockScreenWidget1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget1.swift; sourceTree = "<group>"; };
+		577D71B828CB0D6600A57477 /* LockScreenWidget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				576C6B7F285079C1007C1C33 /* LockScreenWidget.swift */,
+				577D71B628CB0B3F00A57477 /* LockScreenWidget1.swift */,
+				577D71B828CB0D6600A57477 /* LockScreenWidget2.swift */,
 				576C6B81285079C1007C1C33 /* Assets.xcassets */,
 				576C6B83285079C1007C1C33 /* Info.plist */,
 			);
@@ -249,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				576C6B8F28507C7B007C1C33 /* LockScreenWidgetEntryView.swift in Sources */,
+				577D71B928CB0D6600A57477 /* LockScreenWidget2.swift in Sources */,
 				576C6B80285079C1007C1C33 /* LockScreenWidget.swift in Sources */,
+				577D71B728CB0B3F00A57477 /* LockScreenWidget1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

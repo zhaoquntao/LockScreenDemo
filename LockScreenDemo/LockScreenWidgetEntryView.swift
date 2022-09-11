@@ -27,13 +27,24 @@ struct LockScreenWidgetView: View {
 }
 
 struct HealthLevelCircular: View {
+    // 从环境变量获取渲染模式
+    @Environment(\.widgetRenderingMode) var renderingMode
     var body: some View {
         ZStack (alignment: .center){
 //            Color.clear
-//            SmallCicleView(title: "电量",percentageInt: 40)
-//            Text("40").font(Font.system(size: 18)).fixedSize()
+            AccessoryWidgetBackground()
+            SmallCicleView(title: "电量",percentageInt: 40)
+            Text("40").font(Font.system(size: 18)).fixedSize()
+//            ProgressView(value: 0.3, total: 1.0)
 
-            SmallCicleView1(title: "微信")
+//                        switch widgetRenderingMode {
+            //            case .fullColor: // 小组件
+            //            case .vibrant: // 锁屏小组件
+            //            case .accented:  // 只支持watch os
+            //                 ZStack{ }   .widgetAccentable(true)
+            //            default:
+            //            }
+            // 📢📢📢📢注意： 目前Widget中暂时不支持list视图
         }
     }
 }
@@ -41,19 +52,24 @@ struct HealthLevelCircular: View {
 struct HealthLevelRectangular: View {
     var body: some View {
         GeometryReader{ geo  in
-//            Text("iOS16锁屏小组件")
-//                .font(Font.system(size: 18))
-//                .fixedSize()
+            HStack {
+                Text("iOS16锁屏小组件")
+                    .font(Font.system(size: 12))
+                    .fixedSize()
+                Text(Date(), style: .time)
+                    .font(Font.system(size: 18))
+                    .fixedSize()
+            }
 
-            HStack{
+//            HStack{
 //                SmallCicleView(title: "电量",percentageInt: 40)
 //                SmallCicleView(title: "电量",percentageInt: 60)
 //                SmallCicleView(title: "任务",percentageInt: 80)
 
-                SmallCicleView1(title: "微信")
-                SmallCicleView1(title: "微博")
-                SmallCicleView1(title: "钉钉")
-            }
+//                SmallCicleView1(title: "微信")
+//                SmallCicleView1(title: "微博")
+//                SmallCicleView1(title: "钉钉")
+//            }
 
             .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             .frame(width: geo.size.width, height: geo.size.height)
