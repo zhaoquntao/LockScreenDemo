@@ -38,6 +38,7 @@ struct Provider2: TimelineProvider {
 //    let date: Date
 //}
 
+@available(iOSApplicationExtension 16.0, *)
 struct LockScreenWidgetEntryView2 : View {
     var entry: Provider2.Entry
 
@@ -46,6 +47,7 @@ struct LockScreenWidgetEntryView2 : View {
     }
 }
 
+@available(iOSApplicationExtension 16.0, *)
 struct LockScreenWidget2: Widget {
     let kind: String = "LockScreenWidget"
 
@@ -59,6 +61,7 @@ struct LockScreenWidget2: Widget {
     }
 }
 
+@available(iOSApplicationExtension 16.0, *)
 struct LockScreenWidget2_Previews: PreviewProvider {
     static var previews: some View {
         LockScreenWidgetEntryView2(entry: SimpleEntry(date: Date()))

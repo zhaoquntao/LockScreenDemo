@@ -7,7 +7,7 @@
 
 import SwiftUI
 import WidgetKit
-
+@available(iOSApplicationExtension 16.0, *)
 struct LockScreenWidgetView: View {
     @Environment(\.widgetFamily) var family
 
@@ -26,6 +26,7 @@ struct LockScreenWidgetView: View {
     }
 }
 
+@available(iOSApplicationExtension 16.0, *)
 struct HealthLevelCircular: View {
     // 从环境变量获取渲染模式
     @Environment(\.widgetRenderingMode) var renderingMode
@@ -48,7 +49,7 @@ struct HealthLevelCircular: View {
         }
     }
 }
-
+@available(iOSApplicationExtension 16.0, *)
 struct HealthLevelRectangular: View {
     var body: some View {
         GeometryReader{ geo  in
@@ -78,7 +79,7 @@ struct HealthLevelRectangular: View {
         }
     }
 }
-
+@available(iOSApplicationExtension 16.0, *)
 struct SmallCicleView: View {
     @State var title: String = ""
     @State var percentageInt: Double = 0
@@ -94,6 +95,7 @@ struct SmallCicleView: View {
 }
 
 
+@available(iOSApplicationExtension 16.0, *)
 struct SmallCicleView1: View {
     @State var title: String = ""
     @State var percentageInt: Double = 0
@@ -109,7 +111,7 @@ struct SmallCicleView1: View {
     }
 }
 
-
+@available(iOSApplicationExtension 16.0, *)
 struct HealthLevelInline: View {
     var body: some View {
         Text("iOS16锁屏小组件")
@@ -117,6 +119,7 @@ struct HealthLevelInline: View {
 }
 
 
+@available(iOSApplicationExtension 16.0, *)
 struct LockScreenWidgetEntryView_Previews: PreviewProvider {
     static var previews: some View {
         LockScreenWidgetView()

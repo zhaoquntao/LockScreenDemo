@@ -20,6 +20,12 @@
 		576C6B8F28507C7B007C1C33 /* LockScreenWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C6B8B285079FF007C1C33 /* LockScreenWidgetEntryView.swift */; };
 		577D71B728CB0B3F00A57477 /* LockScreenWidget1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D71B628CB0B3F00A57477 /* LockScreenWidget1.swift */; };
 		577D71B928CB0D6600A57477 /* LockScreenWidget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D71B828CB0D6600A57477 /* LockScreenWidget2.swift */; };
+		57A7728E28D30A490048C420 /* LiveActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7728D28D30A490048C420 /* LiveActivityHelper.swift */; };
+		57A7728F28D30A490048C420 /* LiveActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7728D28D30A490048C420 /* LiveActivityHelper.swift */; };
+		57A7729128D30C4C0048C420 /* PizzaDeliveryAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7729028D30C4C0048C420 /* PizzaDeliveryAttributes.swift */; };
+		57A7729228D30C4C0048C420 /* PizzaDeliveryAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7729028D30C4C0048C420 /* PizzaDeliveryAttributes.swift */; };
+		57A772AB28D315660048C420 /* PizzaDeliveryActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A772AA28D315660048C420 /* PizzaDeliveryActivityWidget.swift */; };
+		57A772AC28D315660048C420 /* PizzaDeliveryActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A772AA28D315660048C420 /* PizzaDeliveryActivityWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,10 @@
 		576C6B8B285079FF007C1C33 /* LockScreenWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidgetEntryView.swift; sourceTree = "<group>"; };
 		577D71B628CB0B3F00A57477 /* LockScreenWidget1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget1.swift; sourceTree = "<group>"; };
 		577D71B828CB0D6600A57477 /* LockScreenWidget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget2.swift; sourceTree = "<group>"; };
+		57A7728D28D30A490048C420 /* LiveActivityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityHelper.swift; sourceTree = "<group>"; };
+		57A7729028D30C4C0048C420 /* PizzaDeliveryAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDeliveryAttributes.swift; sourceTree = "<group>"; };
+		57A7729328D312750048C420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		57A772AA28D315660048C420 /* PizzaDeliveryActivityWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaDeliveryActivityWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +115,12 @@
 		576C6B65285079A1007C1C33 /* LockScreenDemo */ = {
 			isa = PBXGroup;
 			children = (
+				57A7729328D312750048C420 /* Info.plist */,
 				576C6B66285079A1007C1C33 /* LockScreenDemoApp.swift */,
 				576C6B68285079A1007C1C33 /* ContentView.swift */,
 				576C6B8B285079FF007C1C33 /* LockScreenWidgetEntryView.swift */,
+				57A7728D28D30A490048C420 /* LiveActivityHelper.swift */,
+				57A7729028D30C4C0048C420 /* PizzaDeliveryAttributes.swift */,
 				576C6B6A285079A2007C1C33 /* Assets.xcassets */,
 				576C6B6C285079A2007C1C33 /* Preview Content */,
 			);
@@ -137,6 +150,7 @@
 				576C6B7F285079C1007C1C33 /* LockScreenWidget.swift */,
 				577D71B628CB0B3F00A57477 /* LockScreenWidget1.swift */,
 				577D71B828CB0D6600A57477 /* LockScreenWidget2.swift */,
+				57A772AA28D315660048C420 /* PizzaDeliveryActivityWidget.swift */,
 				576C6B81285079C1007C1C33 /* Assets.xcassets */,
 				576C6B83285079C1007C1C33 /* Info.plist */,
 			);
@@ -189,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					576C6B62285079A1007C1C33 = {
@@ -245,8 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				576C6B69285079A1007C1C33 /* ContentView.swift in Sources */,
+				57A7729128D30C4C0048C420 /* PizzaDeliveryAttributes.swift in Sources */,
 				576C6B67285079A1007C1C33 /* LockScreenDemoApp.swift in Sources */,
+				57A7728E28D30A490048C420 /* LiveActivityHelper.swift in Sources */,
 				576C6B8C285079FF007C1C33 /* LockScreenWidgetEntryView.swift in Sources */,
+				57A772AB28D315660048C420 /* PizzaDeliveryActivityWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A772AC28D315660048C420 /* PizzaDeliveryActivityWidget.swift in Sources */,
 				576C6B8F28507C7B007C1C33 /* LockScreenWidgetEntryView.swift in Sources */,
+				57A7729228D30C4C0048C420 /* PizzaDeliveryAttributes.swift in Sources */,
+				57A7728F28D30A490048C420 /* LiveActivityHelper.swift in Sources */,
 				577D71B928CB0D6600A57477 /* LockScreenWidget2.swift in Sources */,
 				576C6B80285079C1007C1C33 /* LockScreenWidget.swift in Sources */,
 				577D71B728CB0B3F00A57477 /* LockScreenWidget1.swift in Sources */,
@@ -398,11 +418,13 @@
 				DEVELOPMENT_TEAM = 736SJ3UTQP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +450,13 @@
 				DEVELOPMENT_TEAM = 736SJ3UTQP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +482,7 @@
 				INFOPLIST_FILE = LockScreenWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +510,7 @@
 				INFOPLIST_FILE = LockScreenWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.1, *)
 @main
 struct LockScreenDemoApp: App {
     var body: some Scene {
