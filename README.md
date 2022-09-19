@@ -1,5 +1,5 @@
 # LockScreenDemo
-iOS16全新锁屏体验开发Demo
+iOS16全新锁屏体验、灵动岛开发Demo
 <!-- ![LockScreenDemo](image/2022060801.png "LockScreenDemo") -->
  <div  align="center">    
   <img width="300" alt="img" src="https://raw.githubusercontent.com/zhaoquntao/LockScreenDemo/master/image/2022060801.png">
